@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bower.io Usage Demo</title>
+
+<!-- loading packages from bower_components -->
+<script src="bower_components/jquery/jquery.min.js"></script>
+<link href="bower_components/css3-magic/magic.min.css" rel="stylesheet" type="text/css">
+
+<script>
+$(function() {
+	alert('jQuery Loaded');
+	$('.sample').hover(function () {
+		$(this).addClass('magictime magic');
+	});
+	$('.reset').click(function () {
+		$('.sample').removeClass('magictime magic');
+	});
+});
+</script>
+<style>
+body {
+	font-family: sans-serif;
+}
+.sample {
+	background: #f00;
+	color: #fff;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	width: 100px;
+}
+</style>
+
+</head>
+
+<body>
+<button class="reset">Reset</button>
+<br><br>
+<div class="sample">Hover me!</div>
+</body>
+</html>

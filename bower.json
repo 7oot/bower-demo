@@ -1,0 +1,21 @@
+{
+  "name": "bower-demo",
+  "version": "0.1",
+  "description": "Trying out BOWER",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "css3-magic": "*"
+  },
+  "devDependencies": {
+    "qunit": "~1.13.0"
+  }
+}
